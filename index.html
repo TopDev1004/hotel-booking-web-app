@@ -1,37 +1,254 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/TopDev1004/hotel-booking-web-app/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TopDev1004/hotel-booking-web-app/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        
+        <title>trillo &mdash; Your all-in-one booking app</title>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img src="./img/logo.png" alt="logo" class="logo">
+                <form action="#" class="search">
+                    <input type="text" class="search-input" placeholder="Search hotels">
+                    <button class="search-btn">
+                        <svg class="search-icon">
+                            <use xlink:href="./img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+                <nav class="user-nav">
+                    <div class="user-nav-icon-box">
+                        <svg class="user-nav-icon">
+                            <use xlink:href="./img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav-notification">7</span>
+                    </div>
+                    <div class="user-nav-icon-box">
+                        <svg class="user-nav-icon">
+                            <use xlink:href="./img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav-notification">13</span>
+                    </div>
+                    <div class="user-nav-user">
+                        <img src="./img/user.jpg" alt="user photo" class="user-nav-user-photo">
+                        <span class="user-nav-user-name">John</span>
+                    </div>
+                </nav>
+            </header>
+            <div class="content">
+                <nav class="sidebar">
+                    <ul class="side-nav">
+                        <li class="side-nav-item side-nav-item-active">
+                            <a href="#" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span class="">Hotel</span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="#" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                <span class="">Flight</span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="#" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-key"></use>
+                                </svg>
+                                <span class="">Car rental</span>
+                            </a>
+                        </li>
+                        <li class="side-nav-item">
+                            <a href="#" class="side-nav-link">
+                                <svg class="side-nav-icon">
+                                    <use xlink:href="./img/sprite.svg#icon-map"></use>
+                                </svg>
+                                <span class="">Tours</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="legal">
+                        &copy; All Rights Reserved
+                    </div>
+                </nav>
+                <main class="hotel-view">
+                    <div class="gallery">
+                        <figure class="gallery-item">
+                            <img src="./img/hotel-3.jpg" alt="photo of hotel 3" class="gallery-photo">
+                        </figure>
+                        <figure class="gallery-item">
+                            <img src="./img/hotel-1.jpg" alt="photo of hotel 1" class="gallery-photo">
+                        </figure>
+                        <figure class="gallery-item">
+                            <img src="./img/hotel-2.jpg" alt="photo of hotel 2" class="gallery-photo">
+                        </figure>
+                    </div>
+                    <div class="overview">
+                        <h1 class="overview-heading"> 
+                            Hotel Las Palms 
+                        </h1>
+                        <div class="overview-stars">
+                            <svg class="overview-icon">
+                                <use xlink:href="./img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview-icon">
+                                <use xlink:href="./img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview-icon">
+                                <use xlink:href="./img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview-icon">
+                                <use xlink:href="./img/sprite.svg#icon-star"></use>
+                            </svg>
+                            <svg class="overview-icon">
+                                <use xlink:href="./img/sprite.svg#icon-star"></use>
+                            </svg>
+                        </div>
+                        <div class="overview-location">
+                            <svg class="overview-icon-location">
+                                <use xlink:href="./img/sprite.svg#icon-location-pin"></use>
+                            </svg>
+                            <button class="btn-inline">Toronto, Canada</button>
+                        </div>
+                        <div class="overview-rating">
+                            <div class="overview-rating-average">8.7</div>
+                            <div class="overview-rating-count">837 votes </div>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <div class="description">
+                            <div class="description-paragraphs">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus possimus odit esse, porro est placeat blanditiis cupiditate reprehenderit impedit.</p><br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. obcaecati voluptas modi cum illum aut nam quo voluptatibus rem quod in nemo?</p>
+                            </div>
+                            <div class="amneties">
+                                <ul class="amneties-list-1">
+                                    <li class="amneties-item">
+                                        <a href="#" class="amneties-link">
+                                            <svg class="amneties-icon">
+                                                <use xlink:href="./img/sprite.svg#icon-chevron-right"></use>
+                                            </svg>
+                                            <span class="">Close to the beach</span>
+                                        </a>
+                                    </li>
+                                    <li class="amneties-item">
+                                        <a href="#" class="amneties-link">
+                                            <svg class="amneties-icon">
+                                                <use xlink:href="./img/sprite.svg#icon-chevron-right"></use>
+                                            </svg>
+                                            <span class="">Fre airport shuttle</span>
+                                        </a>
+                                    </li>
+                                    <li class="amneties-item">
+                                        <a href="#" class="amneties-link">
+                                            <svg class="amneties-icon">
+                                                <use xlink:href="./img/sprite.svg#icon-chevron-right"></use>
+                                            </svg>
+                                            <span class="">Air conditioning</span>
+                                        </a>
+                                    </li>
+                                    <li class="amneties-item">
+                                        <a href="#" class="amneties-link">
+                                            <svg class="amneties-icon">
+                                                <use xlink:href="./img/sprite.svg#icon-chevron-right"></use>
+                                            </svg>
+                                            <span class="">We speak all languages</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="amneties-list-2">
+                                    <li class="amneties-item">
+                                        <a href="#" class="amneties-link">
+                                            <svg class="amneties-icon">
+                                                <use xlink:href="./img/sprite.svg#icon-chevron-right"></use>
+                                            </svg>
+                                            <span class="">Breakfast included</span>
+                                        </a>
+                                    </li>
+                                    <li class="amneties-item">
+                                        <a href="#" class="amneties-link">
+                                            <svg class="amneties-icon">
+                                                <use xlink:href="./img/sprite.svg#icon-chevron-right"></use>
+                                            </svg>
+                                            <span class="">Free WiFi in all rooms</span>
+                                        </a>
+                                    </li>
+                                    <li class="amneties-item">
+                                        <a href="#" class="amneties-link">
+                                            <svg class="amneties-icon">
+                                                <use xlink:href="./img/sprite.svg#icon-chevron-right"></use>
+                                            </svg>
+                                            <span class="">Kids concept</span>
+                                        </a>
+                                    </li>
+                                    <li class="amneties-item">
+                                        <a href="#" class="amneties-link">
+                                            <svg class="amneties-icon">
+                                                <use xlink:href="./img/sprite.svg#icon-chevron-right"></use>
+                                            </svg>
+                                            <span class="">4 open swimming pool</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="description-users-recommend">
+                                <p>Sara and 5 others recommended this place </p>
+                                <div class="description-users">
+                                    <img src="./img/user-5.jpg" alt="user-1-photo" class="description-users-photo">
+                                    <img src="./img/user-2.jpg" alt="user-2-photo" class="description-users-photo">
+                                    <img src="./img/user-3.jpg" alt="user-3-photo" class="description-users-photo">
+                                    <img src="./img/user-4.jpg" alt="user-4-photo" class="description-users-photo">
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="user-reviews">
+                            <div class="user-reviews-user">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Abedo repellendus possimus adipisicing elit. Laudantium.</p>
+                                <div class="user-reviews-user-info">
+                                    <img src="./img/user-1.jpg" alt="user photo" class="user-reviews-user-photo">
+                                    <div class="user-reviews-user-info-box">
+                                        <div class="user-reviews-user-name">Nick Smith</div>
+                                        <div class="user-reviews-user-date">April 28th 2020 </div>
+                                    </div>
+                                    <div class="user-reviews-user-rate">8.5</div>
+                                </div>
+                            </div>
+                            <div class="user-reviews-user">
+                                <p>Lorem ipsum elit dolor sit amet consectetur elit. Laudantium.</p>
+                                <div class="user-reviews-user-info">
+                                    <img src="./img/user-2.jpg" alt="user photo" class="user-reviews-user-photo">
+                                    <div class="user-reviews-user-info-box">
+                                        <div class="user-reviews-user-name">Marry Doe</div>
+                                        <div class="user-reviews-user-date">April 28th 2020 </div>
+                                    </div>
+                                    <div class="user-reviews-user-rate">7.6</div>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="#" class="user-reviews-link">Show all <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promotion-news">
+                        <div class="promotion-news-text">Good News! We have 4 Free rooms for your selected dates.</div>
+                        <button class="promotion-news-btn">
+                            <span class="promotion-news-btn-visible">Book Now</span>
+                            <span class="promotion-news-btn-invisible">only 4 rooms left</span>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </body>
+</html>
